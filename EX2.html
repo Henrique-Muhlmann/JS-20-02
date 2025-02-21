@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem do Dia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f0f8ff;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bem-vindo ao canal de mensagens diárias!</h1>
+    <div class="container">
+        <label for="nameInput">Digite seu nome:</label>
+        <input type="text" id="nameInput" placeholder="Seu nome">
+        <br>
+        <label for="dayInput">Que dia é hoje?</label>
+        <input type="text" id="dayInput" placeholder="Ex: Segunda, Terça, etc.">
+        <br>
+        <button onclick="verificarMensagem()">Enviar</button>
+    </div>
+
+    <h2 id="result"></h2>
+
+    <script src="EX2.js"></script>
+</body>
+
+</html>
